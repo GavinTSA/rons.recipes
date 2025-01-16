@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Ron's Recipes</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/about/index.html">About</a></li>
+          <li><a href="/recipe/index.html">Recipes</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <img
+      src="img/banner.jpeg"
+      style="width: 100vw; height: 400px; object-fit: cover"
+    />
+    <p>
+      Image Source:
+      <a
+        href="https://images.unsplash.com/photo-1713561058969-793049b01712?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8c3BhZ2hldHRpfGVufDB8fDB8fHww"
+        >Unsplash</a
+      >
+    </p>
+
+    <h1 style="font-size: 38px">Featured Recipes</h1>
+
+    <div id="featured-recipes">
+      <!--Box 1 -->
+      <div class="recipe">
+        <h2>Peanut Butter Pancakes</h2>
+        <img src="img/featured1.png" class="recipe-image" />
+        <li>1 large egg</li>
+        <li>1 cup all-purpose flour</li>
+        <li>3 tablespoons creamy peanut butter</li>
+        <a href="recipe/peanut-butter-pancakes.html"><p>View More</p></a>
+      </div>
+
+      <!--Box 2 -->
+      <div class="recipe">
+        <h2>Vegan Oatmeal Cookies</h2>
+        <img src="img/featured2.png" class="recipe-image" />
+        <li>1 ½ cups all-purpose flour</li>
+        <li>½ cup Old Fashioned Oats</li>
+        <li>1 teaspoon baking powder</li>
+        <a href="recipe/vegan-oatmeal-cookies.html"><p>View More</p></a>
+      </div>
+
+      <!--Box 3 -->
+      <div class="recipe">
+        <h2>Taylor Swift Chai Cookies</h2>
+        <img src="img/featured3.png" class="recipe-image" />
+        <li>½ cup unsalted butter</li>
+        <li>½ cup granulated white sugar</li>
+        <li>½ cup powdered sugar</li>
+        <a href="recipe/ts-chai-cookies.html"><p>View More</p></a>
+      </div>
+    </div>
+
+    <div id="questionnaire-container">
+      <h1>Take this short questionnaire to find recipe recommendations</h1>
+      <form id="recipe-form">
+        <div>
+          <label>Are you vegan?</label>
+          <input type="radio" id="vegan-yes" name="vegan" value="yes" />
+          <label for="vegan-yes">Yes</label>
+          <input type="radio" id="vegan-no" name="vegan" value="no" />
+          <label for="vegan-no">No</label>
+        </div>
+
+        <div>
+          <label>What type of meal are you looking for?</label>
+          <input type="radio" id="meal-treat" name="meal-type" value="treat" />
+          <label for="meal-treat">Treat</label>
+          <input
+            type="radio"
+            id="meal-breakfast"
+            name="meal-type"
+            value="breakfast"
+          />
+          <label for="meal-breakfast">Breakfast</label>
+          <input type="radio" id="meal-main" name="meal-type" value="main" />
+          <label for="meal-main">Main Dish</label>
+        </div>
+
+        <div>
+          <label>Do you want a quick or detailed recipes?</label>
+          <input type="radio" id="prep-quick" name="prep-time" value="quick" />
+          <label for="prep-quick">Quick</label>
+          <input
+            type="radio"
+            id="prep-detailed"
+            name="prep-time"
+            value="detailed"
+          />
+          <label for="prep-detailed">Detailed</label>
+        </div>
+
+        <div>
+          <label>Are you interested in a specific type of cuisine?</label>
+          <input
+            type="radio"
+            id="cuisine-american"
+            name="cuisine"
+            value="american"
+          />
+          <label for="cuisine-american">American</label>
+          <input type="radio" id="cuisine-keto" name="cuisine" value="keto" />
+          <label for="cuisine-keto">Keto</label>
+          <input type="radio" id="cuisine-vegan" name="cuisine" value="vegan" />
+          <label for="cuisine-vegan">Vegan</label>
+        </div>
+
+        <button type="button" onclick="getRecipeRecommendation()">
+          Find My Recipe
+        </button>
+      </form>
+      <div id="result"></div>
+    </div>
+
+    <div id="TSA">
+      <!-- Center butter. I'll add the copyright/worklog pdfs, and get a domain and publish the site.-->
+      <button type="button" onclick="gotoCopyright()">
+        Copyright Checklist
+      </button>
+      <button type="button" onclick="gotoLog()">Work Log</button>
+    </div>
+  </body>
+</html>
