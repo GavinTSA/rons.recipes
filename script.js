@@ -171,11 +171,9 @@ const recipes = [
 }
 
     function gotoCopyright() {
-        // replace with pdf link asap
-        window.location.href = "#";
+        window.location.href = "copyright.pdf";
     }
 
     function gotoLog() {
-        // replace with work log link asap
-        window.location.href = "#";
+        window.location.href = "log.pdf";
     }
