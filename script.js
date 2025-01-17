@@ -127,14 +127,6 @@ const recipes = [
       prepTime: "detailed",
       cuisine: "vegan",
     },
-    {
-      name: "Taylor Swift Chai Cookies",
-      url: "recipe/ts-chai-cookies.html",
-      vegan: true,
-      type: "treat",
-      prepTime: "detailed",
-      cuisine: "vegan",
-    },
   ];
 
   function getRecipeRecommendation() {
