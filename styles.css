@@ -47,10 +47,14 @@ h1 {
   border-width: 6px;
   border-radius: 25px;
   max-width: 360px;
-  max-height: 360px;
   padding: 5px;
   margin: 0 auto;
+}
+
+.recipe img {
+  max-height: 360px;
   object-fit: cover;
+
 }
 
 .recipe_big {
