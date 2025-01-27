@@ -260,3 +260,41 @@ button a:hover {
   margin-right: 25px;
   margin-bottom: 100px;
 }
+
+/* MOBILE */
+@media only screen and (max-width: 900px) {
+  /* For phones: */
+  .name {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .recipe {
+    border-style: solid;
+    border-width: 6px;
+    border-radius: 25px;
+    max-width: 420px;
+    padding: 5px;
+    margin: 0 auto;
+  }
+
+  .recipe-image {
+    width: 420px;
+  }
+}
+
+@media only screen and (min-width: 1700px) {
+  .recipe {
+    border-style: solid;
+    border-width: 6px;
+    border-radius: 25px;
+    max-width: 500px;
+    padding: 5px;
+    margin: 0 auto;
+  }
+
+  .recipe-image {
+    width: 500px;
+  }
+}
