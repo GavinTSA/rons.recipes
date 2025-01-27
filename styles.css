@@ -31,6 +31,10 @@ nav ul.nav-links {
   justify-content: center;
 }
 
+.name li a:hover {
+  text-decoration: none;
+}
+
 header li,
 header li a {
   list-style: none;
