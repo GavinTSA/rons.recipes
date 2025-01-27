@@ -6,12 +6,29 @@ body {
   color: black;
 }
 
-header ul {
+header {
+  width: 100%;
+}
+
+nav {
+  max-width: 100%;
+  background-color: navy;
+  font-size: 24px;
+  padding: 8px;
   display: flex;
-  flex-flow: row wrap;
   justify-content: center;
+  align-items: center;
+}
+
+nav > ul.name {
+  position: absolute;
+  left: 20px;
+}
+
+nav ul.nav-links {
+  display: flex;
   gap: 15px;
-  position: relative;
+  justify-content: center;
 }
 
 header li,
@@ -26,21 +43,8 @@ header li a:hover {
   text-decoration: underline;
 }
 
-nav {
-  max-width: 100%;
-  background-color: navy;
-  font-size: 24px;
-  padding: 8px;
-}
-
 h1 {
   text-align: center;
-}
-
-.name {
-  display: flex;
-  float: left;
-  justify-content: left;
 }
 
 #featured-recipes {
@@ -60,7 +64,6 @@ h1 {
 .recipe img {
   max-height: 360px;
   object-fit: cover;
-
 }
 
 .recipe_big {
@@ -201,7 +204,6 @@ a:hover {
   margin-left: 0;
 }
 
-
 button {
   background-color: navy;
   color: white;
@@ -248,7 +250,7 @@ button a:hover {
   text-decoration: underline;
 }
 
-#TSA{
+#TSA {
   display: flex;
   align-items: center;
   justify-content: center;
