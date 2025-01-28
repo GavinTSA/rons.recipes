@@ -166,3 +166,7 @@ function gotoCopyright() {
 function gotoLog() {
   window.location.href = "log.pdf";
 }
+
+function gotoRef() {
+  window.location.href = "ref"
+}
